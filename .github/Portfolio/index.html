@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta 
+            name="description"
+            content="Un portfolio de qualité avec de la poudreuse jusqu'au genoux !" />
+        <title>Evann COLIN</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <a href="#" class="logo">Evann COLIN</a>
+            <div class="nav-links">
+                <ul>
+                   <li><a href="#etudes">Études</a></li>
+                   <li><a href="#CV">Curriculum Vitae</a></li> 
+                   <li><a href="#Contacts">Réseaux sociaux</a></li> 
+                </ul>
+            </div>
+            <img src="img/menu-btn.png" alt="menu hamburger" class="menu-burger">
+        </nav>
+        <header>
+        </header>
+
+        <section class="perso" id="moi">
+            <h1>À propos de moi</h1>
+            <img src="img/moi.jpg" alt="evann colin">
+            <p>
+              Je m’appelle Evann Colin, j’ai 19 ans et je suis étudiant en BUT informatique à l’IUT2 de Grenoble. Je souhaite explorer et découvrir les différents métiers de l’informatique, en particulier dans le secteur des applications communicantes et sécurisées. Mon objectif est de trouver la profession qui me correspond le mieux et de déployer toute ma créativité et mon sérieux.
+            </p>
+            <h3>Mes activitées hors études</h3>
+            <p>
+              Hors de mes études, je suis également engagé dans une association de jeunes scouts en Haute-Savoie. Je suis également réserviste à l’armée. De plus, je pratique beaucoup de sports tels que la randonnée, la musculation, le basketball, et en hiver, je pratique énormément de sports de glisse tels que le ski de piste, la randonnée et le snowboard.
+            </p>
+        </section>
+
+        <section class="etudes" id="etudes">
+            <h1>Mes Projects d'Etudes</h1>
+            <p>
+              Après avoir obtenu mon baccalauréat avec les spécialités en mathématiques et NSI (Numérique et Sciences de l’informatique), j’ai choisi de poursuivre mes études en BUT informatique à l’IUT2 de Grenoble. Mon objectif était de développer mon intérêt pour cette matière et d’explorer les différentes opportunités qu’elle pouvait offrir.
+            </p>
+            <div class="container">
+              <h3>
+                Cliquez sur les cartes ci-dessous pour découvrir les projets que j’ai réalisés.
+              </h3>
+                <div class="card" onclick="location.href='BUT1.html';">
+                  <img src="img/BUT1.jpg" alt="BUT 1">
+                  <div class="card-body">
+                    <h5 class="card-title">B.U.T.1</h5>
+                    <p class="card-text">Projects de ma première année d'études.</p>
+                  </div>
+                </div>
+                <div class="card" onclick="location.href='BUT2.html';">
+                  <img src="img/BUT2.jpg" alt="BUT 2">
+                  <div class="card-body">
+                    <h5 class="card-title">B.U.T.2</h5>
+                    <p class="card-text">Projects de ma deuxième année d'études.</p>
+                  </div>
+                </div>
+                <div class="card" onclick="location.href='page3.html';">
+                  <img src="img/BUT3.jpg" alt="BUT 3">
+                  <div class="card-body">
+                    <h5 class="card-title">B.U.T.3</h5>
+                    <p class="card-text">Projects de ma troisième année d'études.</p>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="etudes" id="CV">
+            <h1>Mon Curriculum Vitae</h1>
+            <div class="container">
+              <h3>
+                Voici mon CV le plus récent.
+              </h3>
+                <img src="img/cv.png" alt="Curriculum Vitae">
+            </div>
+        </section>
+
+        <section class="contacts" id="Contacts">
+            <h1>Me Contactez</h1>
+            <h3>Vous pouvez me contacter via ces différents moyens ainsi que mes réseaux sociaux.</h3>
+            <h4>Téléphone : 06.83.08.46.71</h4>
+            <h4>E-Mail : evanncolin@gmail.com</h4>
+            <div class="social">
+              <a href="https://www.instagram.com/evanncolin/" class="fa fa-instagram fa-3x"></a>
+              <a href="https://www.linkedin.com/in/evann-colin-589b83205/" class="fa fa-linkedin fa-3x"></a>
+            </div>
+
+        </section>
+
+    </body>
+        <script>
+            const menuHamburger = document.querySelector(".menu-burger")
+            const navLinks = document.querySelector(".nav-links")
+
+            menuHamburger.addEventListener('click', ()=>{
+                navLinks.classList.toggle('mobile-menu')
+            })
+        </script>
+</html>
