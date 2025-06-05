@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet - Stage 2024 - Evann COLIN</title>
+    <title>Stage 2024 - OC-Hub</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html#home">EC</a>
+            <a class="navbar-brand" href="index.html">EC</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -22,56 +22,58 @@
                     <li class="nav-item"><a class="nav-link" href="index.html#home">Accueil</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#about">À propos</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="engagements.html">Engagements</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Project Header -->
-    <section class="py-5 bg-light">
-        <div class="container text-center">
-            <h1 class="display-4 fw-bold">Stage 2024 - OC-Hub</h1>
-            <p class="lead">Développement d'une application web pour automatiser la confirmation de commandes chez Siegwerk</p>
-            <img src="https://via.placeholder.com/800x400" alt="OC-Hub Project" class="img-fluid rounded shadow my-4" style="max-width: 100%;">
-        </div>
-    </section>
-
-    <!-- Project Details -->
+    <!-- Project Content -->
     <section class="py-5">
         <div class="container">
+            <h1 class="text-center mb-4">Stage 2024 - OC-Hub</h1>
+            <h2 class="text-center mb-5">Développement d'une application web pour automatiser la confirmation de commandes chez Siegwerk</h2>
+
             <div class="row">
-                <!-- Overview -->
-                <div class="col-12 col-lg-8">
-                    <h2>Présentation du projet</h2>
-                    <p>Durant mon stage chez Siegwerk Druckfarben à Siegburg, Allemagne, du 15 avril au 21 juin 2024, j'ai développé une application web nommée <strong>OC-Hub</strong> (Order Confirmation Hub). L'objectif était d'automatiser le processus de confirmation de commandes entre Siegwerk et ses fournisseurs, réduisant ainsi la charge de travail manuelle des Account Managers Sales (AMS). Le projet s'inscrit dans le cadre du Transactional Hub (TH), une initiative visant à optimiser les processus métiers via des solutions numériques. J'ai travaillé en autonomie, de la conception à la réalisation, en utilisant la suite Microsoft Power Platform dans un environnement de développement low-code.</p>
-                    
-                    <h3>Technologies utilisées</h3>
-                    <ul class="list-unstyled">
-                        <li><i class="fas fa-check text-custom"></i> Microsoft Power Apps Studio (Modèle de données)</li>
-                        <li><i class="fas fa-check text-custom"></i> Power Automate (flows de données)</li>
-                        <li><i class="fas fa-check text-custom"></i> SharePoint (stockage des données)</li>
-                        <li><i class="fas fa-check text-custom"></i> SAP (intégration via TH API)</li>
-                    </ul>
-                    
-                    <h3>Défis rencontrés</h3>
-                    <p>Le principal défi était de m'adapter à un environnement de développement low-code, une approche nouvelle pour moi, ainsi qu'à l'utilisation d'outils comme Power Apps et Power Automate. La communication en anglais et en allemand, dans un contexte professionnel à l'étranger, a également été un défi initial. J'ai surmonté ces obstacles en m'organisant efficacement, en participant à des réunions régulières avec les utilisateurs (AMS et fournisseurs), et en apprenant rapidement à maîtriser l'environnement Microsoft. La méthode agile adoptée m'a permis de prioriser les tâches et de maintenir un produit stable tout au long du développement.</p>
-                    
-                    <h3>Résultats</h3>
-                    <p>L'application OC-Hub permet aux fournisseurs de confirmer ou modifier les commandes directement via une interface intuitive, réduisant l'intervention des AMS aux cas nécessitant des ajustements (commandes modifiées ou annulées). Les données sont synchronisées avec le SAP de Siegwerk via Power Automate et stockées sur SharePoint, offrant une vue d'ensemble pour les managers. Bien que le projet soit conçu pour un développement ultérieur, les fonctionnalités de base ont été implémentées avec succès, et la documentation fournie permettra à l'équipe IT de poursuivre le travail. Ce stage m'a également permis d'améliorer mes compétences linguistiques (anglais et allemand) et ma compréhension des processus d'entreprise.</p>
-                </div>
-                
-                <!-- Sidebar with Meta Info -->
-                <div class="col-12 col-lg-4">
+                <div class="col-12">
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body">
+                            <h3>Présentation du projet</h3>
+                            <p>Durant mon stage chez Siegwerk Druckfarben à Siegburg, Allemagne, du 15 avril au 21 juin 2024, j'ai développé une application web nommée OC-Hub (Order Confirmation Hub). L'objectif était d'automatiser le processus de confirmation de commandes entre Siegwerk et ses fournisseurs, réduisant ainsi la charge de travail manuelle des Account Managers Sales (AMS). Le projet s'inscrit dans le cadre du Transactional Hub (TH), une initiative visant à optimiser les processus métiers via des solutions numériques. J'ai travaillé en autonomie, de la conception à la réalisation, en utilisant la suite Microsoft Power Platform dans un environnement de développement low-code.</p>
+
+                            <h3>Technologies utilisées</h3>
+                            <ul>
+                                <li>Microsoft Power Apps Studio (Modèle de données)</li>
+                                <li>Power Automate (flows de données)</li>
+                                <li>SharePoint (stockage des données)</li>
+                                <li>SAP (intégration via TH API)</li>
+                            </ul>
+
+                            <h3>Défis rencontrés</h3>
+                            <p>Le principal défi était de m'adapter à un environnement de développement low-code, une approche nouvelle pour moi, ainsi qu'à l'utilisation d'outils comme Power Apps et Power Automate. La communication en anglais et en allemand, dans un contexte professionnel à l'étranger, a également été un défi initial. J'ai surmonté ces obstacles en m'organisant efficacement, en participant à des réunions régulières avec les utilisateurs (AMS et fournisseurs), et en apprenant rapidement à maîtriser l'environnement Microsoft. La méthode agile adoptée m'a permis de prioriser les tâches et de maintenir un produit stable tout au long du développement.</p>
+
+                            <h3>Résultats</h3>
+                            <p>L'application OC-Hub permet aux fournisseurs de confirmer ou modifier les commandes directement via une interface intuitive, réduisant l'intervention des AMS aux cas nécessitant des ajustements (commandes modifiées ou annulées). Les données sont synchronisées avec le SAP de Siegwerk via Power Automate et stockées sur SharePoint, offrant une vue d'ensemble pour les managers. Bien que le projet soit conçu pour un développement ultérieur, les fonctionnalités de base ont été implémentées avec succès, et la documentation fournie permettra à l'équipe IT de poursuivre le travail. Ce stage m'a également permis d'améliorer mes compétences linguistiques (anglais et allemand) et ma compréhension des processus d'entreprise.</p>
+
+                            <h3>Compétences Mobilisées</h3>
+                            <ul>
+                                <li><strong>C1 - Réaliser un développement d’application :</strong> Conception et développement de l'application OC-Hub en utilisant Power Apps Studio et Power Automate.</li>
+                                <li><strong>C2 - Optimiser des applications :</strong> Optimisation des processus de confirmation de commandes pour réduire la charge manuelle des AMS.</li>
+                                <li><strong>C6 - Travailler dans une équipe informatique :</strong> Collaboration avec l'équipe IT pour l'intégration SAP et les réunions avec les utilisateurs.</li>
+                            </ul>
+                        </div>
+                    </div>
+
                     <div class="card shadow-sm">
                         <div class="card-body">
-                            <h5 class="card-title">Informations</h5>
+                            <h3>Informations</h3>
                             <ul class="list-unstyled">
-                                <li><strong>Date :</strong> Avril - Juin 2024</li>
-                                <li><strong>Durée :</strong> 2 mois et 1 semaine</li>
-                                <li><strong>Contexte :</strong> Stage universitaire</li>
-                                <li><strong>Équipe :</strong> Solo (avec support de l'équipe IT)</li>
-                                <li><strong>Liens :</strong> <a href="#" target="_blank">Non disponible (projet interne)</a></li>
+                                <li>Date : Avril - Juin 2024</li>
+                                <li>Durée : 2 mois et 1 semaine</li>
+                                <li>Contexte : Stage universitaire</li>
+                                <li>Équipe : Solo (avec support de l'équipe IT)</li>
+                                <li>Liens : Non disponible (projet interne)</li>
                             </ul>
                         </div>
                     </div>
@@ -85,8 +87,8 @@
         <div class="container">
             <h3>Envie d'en savoir plus ?</h3>
             <p>Contactez-moi pour discuter de ce projet ou découvrez mes autres réalisations.</p>
-            <a href="index.html#contact" class="btn btn-custom btn-lg m-2">Me contacter</a>
-            <a href="index.html#portfolio" class="btn btn-custom btn-lg m-2">Retour au portfolio</a>
+            <a href="index.html#contact" class="btn btn-custom m-2">Me contacter</a>
+            <a href="index.html#portfolio" class="btn btn-custom m-2">Retour au portfolio</a>
         </div>
     </section>
 
