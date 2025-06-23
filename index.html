@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Evann COLIN</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">EC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="engagements.html">Engagements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#professional-project">Projet professionnel</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero d-flex align-items-center text-center text-white">
+        <div class="container">
+            <h1 class="display-3 fw-bold animate__animated animate__fadeIn">Evann Colin</h1>
+            <p class="lead animate__animated animate__fadeIn animate__delay-1s">Honneur | Force | Loyauté</p>
+            <a href="#portfolio" class="btn btn-custom btn-lg mt-3 animate__animated animate__fadeIn animate__delay-2s">Voir mes travaux</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">À propos de moi</h2>
+            <ul class="nav nav-tabs justify-content-center mb-4" id="profileTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link" id="sports-tab" data-bs-toggle="tab" href="#sports" role="tab" aria-controls="sports" aria-selected="false">Engagements</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" id="formations-tab" data-bs-toggle="tab" href="#formations" role="tab" aria-controls="formations" aria-selected="true">Formations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nutrition-tab" data-bs-toggle="tab" href="#nutrition" role="tab" aria-controls="nutrition" aria-selected="false">Nutrition</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="profileTabContent">
+                <!-- Sports Profile -->
+                <div class="tab-pane fade" id="sports" role="tabpanel" aria-labelledby="sports-tab">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6 mb-4 mb-md-0">
+                            <img src="img/sport.jpg" alt="Profil Sports" class="img-fluid rounded shadow" width="500" height="500">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <p class="lead">À 20 ans, je conjugue mon engagement dans le scoutisme et la réserve des Chasseurs Alpins avec une vie tournée vers le dépassement de soi.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-custom"></i> Ski de randonnée et musculation</li>
+                                <li><i class="fas fa-check text-custom"></i> Discipline et adaptabilité (Scoutisme, Réserviste)</li>
+                                <li><i class="fas fa-check text-custom"></i> Développement personnel et foi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Formations Profile -->
+                <div class="tab-pane fade show active" id="formations" role="tabpanel" aria-labelledby="formations-tab">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6 mb-4 mb-md-0">
+                            <img src="img/formations.jpg" alt="Profil Formations" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <p class="lead">J'ai un B.U.T. Informatique à l'IUT2 de Grenoble (2021-2025), spécialisé dans le déploiement d'applications communicantes et sécurisées.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-custom"></i> Conception d'applications sécurisées (Java, C#, .NET)</li>
+                                <li><i class="fas fa-check text-custom"></i> Gestion de flux de données (Power Apps, Symfony)</li>
+                                <li><i class="fas fa-check text-custom"></i> Déploiement et intégration continue (TDD, Azure DevOps)</li>
+                            </ul>
+                            <p class="lead">J'ai également un BAFA, spécialisé dans les sports de glisse (ski alpin et randonnée).</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-custom"></i> Sécurité des jeunes lors d'activités en extérieur</li>
+                                <li><i class="fas fa-check text-custom"></i> Animations et invention d'univers de jeux</li>
+                                <li><i class="fas fa-check text-custom"></i> Déclarations et administratif</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Nutrition Profile -->
+                <div class="tab-pane fade" id="nutrition" role="tabpanel" aria-labelledby="nutrition-tab">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6 mb-4 mb-md-0">
+                            <img src="img/passion.jpg" alt="Profil Nutrition" class="img-fluid rounded shadow" width="500" height="500">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <p class="lead">Je porte une attention particulière à ma nutrition pour optimiser mes performances sportives et mon bien-être en général.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-custom"></i> Certification Perfo'Diet (en cours)</li>
+                                <li><i class="fas fa-check text-custom"></i> Planification des repas et élaboration d'une diète</li>
+                                <li><i class="fas fa-check text-custom"></i> Études des compléments alimentaires adaptés</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Portfolio</h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Stage 2024 - OC-Hub</h5>
+                            <p class="card-text">Développement d'une application web low-code avec Microsoft Power Platform pour automatiser la confirmation de commandes chez Siegwerk, Allemagne.</p>
+                            <a href="projet1.html" class="btn btn-custom">Voir le projet</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Alternance 2024-2025 - Easy'Boutik</h5>
+                            <p class="card-text">Conception d'une application web .NET Core sur Azure pour simplifier la gestion des créances péages chez ATMB, avec intégration SSO et CI/CD.</p>
+                            <a href="projet2.html" class="btn btn-custom">Voir le projet</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">SAE S3.01 - Hello World</h5>
+                            <p class="card-text">Conception d'un jeu ludo-éducatif NSI pour lycéens, intégrant progression, quiz et suivi pédagogique.</p>
+                            <a href="projet3.html" class="btn btn-custom">Voir le projet</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">SAE S4.01 - Pimp My Ski</h5>
+                            <p class="card-text">Conception d'une infrastructure réseau sécurisée et documentation qualité ISO 25000.</p>
+                            <a href="projet4.html" class="btn btn-custom">Voir le projet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Project Section -->
+    <section id="professional-project" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Projet Professionnel</h2>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h3>Objectif : Master en Informatique Appliquée aux Domaines Sportifs</h3>
+                            <p>Mon projet professionnel est de poursuivre un Master en informatique appliquée aux domaines sportifs, combinant mes compétences techniques acquises durant mon B.U.T. Informatique avec ma passion pour le sport et la montagne. Ce parcours me permettra de développer des solutions innovantes, comme des applications d’entraînement personnalisé ou des systèmes de suivi de performance sportive.</p>
+                            <h4>Plan de Formation :</h4>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-custom"></i> <strong>CQP IF (Certificat de Qualification Professionnelle d'Initiateur Formateur) :</strong> Une formation de 5 mois pour acquérir des compétences en encadrement sportif et pédagogie, prévue à partir de janvier 2026.</li>
+                                <li><i class="fas fa-check text-custom"></i> <strong>Formations en Nutrition :</strong> Des cours complémentaires pour approfondir mes connaissances en diététique sportive, afin d’optimiser les performances des athlètes que je pourrais accompagner.</li>
+                                <li><i class="fas fa-check text-custom"></i> <strong>Année de Césure :</strong> Une pause d’un an après mon B.U.T. (septembre 2025 - août 2026) pour réaliser ces formations et accumuler de l’expérience pratique, notamment via des stages ou des projets personnels.</li>
+                                <li><i class="fas fa-check text-custom"></i> <strong>Master :</strong> Début prévu en septembre 2026, avec une spécialisation en informatique appliquée au sport, idéalement dans une université reconnue.</li>
+                            </ul>
+                            <h4>Perspectives :</h4>
+                            <p>Cette trajectoire me permettra de fusionner mes compétences avec mes expériences (scoutisme, Chasseurs Alpins, BAFA, sports de montagne), ouvrant des opportunités dans des domaines comme la santé sportive, la gestion de données d’entraînement, ou l’innovation technologique pour le sport de montagne.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-5">Contactez-moi</h2>
+            <p>Retrouvez-moi sur mes réseaux sociaux :</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/evanncolin/" target="_blank" class="btn btn-custom m-2">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://www.linkedin.com/in/evann-colin-589b83205" target="_blank" class="btn btn-custom m-2">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center text-white">
+        <p>© 2025 Evann Colin. Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</html>
